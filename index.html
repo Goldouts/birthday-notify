@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let People Know It's Your Birthday!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="top-header">
+            <div class="logo">LetPeopleKnowItsUrBirthday.com</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="signin.html">Sign In</a></li>
+                <li><a href="birthday-wishes.html" class="button">Birthday Wishes</a></li>
+            </ul>
+        </div>
+        <div class="hero">
+            <h1>Welcome to LetPeopleKnowItsUrBirthday.com!</h1>
+            <p>Let your friends and family know it's your birthday and receive heartfelt wishes.</p>
+            <div class="cta-buttons">
+                <a href="signup.html" class="button">Sign Up</a>
+                <a href="signin.html" class="button button-outline">Sign In</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="today-birthday">
+            <h1>Today's Birthdays</h1>
+            <div class="birthday-feed">
+                <div class="birthday-person">
+                    <p>Emily Johnson</p>
+                    <button class="happy-birthday-button">Say Happy Birthday</button>
+                </div>
+                <!-- Add more today birthdays here -->
+            </div>
+        </section>
+        <section class="upcoming-birthdays">
+            <h1>Upcoming Birthdays</h1>
+            <div class="birthday-feed">
+                <div class="birthday-person">
+                    <p>John Doe - June 20</p>
+                </div>
+                <div class="birthday-person">
+                    <p>Jane Smith - June 22</p>
+                </div>
+                <!-- Add more upcoming birthdays here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 LetPeopleKnowItsUrBirthday.com. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll('.happy-birthday-button').forEach(button => {
+            button.addEventListener('click', function() {
+                this.innerText = '🎉 Happy Birthday! 🎉';
+                this.classList.add('clicked');
+            });
+        });
+    </script>
+</body>
+</html>
